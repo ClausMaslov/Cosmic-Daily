@@ -17,7 +17,7 @@ const apodData = document.getElementById('apodData');
 function loadCosmicData() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            const response = yield fetch('https://your-backend.onrender.com/api/space/daily');
+            const response = yield fetch('https://cosmic-daily.onrender.com/api/space/daily');
             if (response.status === 404) {
                 throw new Error('Resource not found');
             }
