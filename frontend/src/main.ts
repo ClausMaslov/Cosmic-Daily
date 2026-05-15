@@ -14,8 +14,7 @@ interface cosmicData {
 
 async function loadCosmicData() {
 	try {
-    const response = await fetch('https://cosmic-daily.onrender.com/api/space/daily');
-
+   const response = await fetch('https://cosmic-daily.onrender.com/api/space/daily');
 		if (response.status === 404) {
 			throw new Error('Resource not found');
 		}
